@@ -6,7 +6,12 @@ from labyrinth import Labyrinth
 
 class Hero:
     def __init__(self,labyrinth): 
+        # -tc- Pourquoi instancer Position alors que le héro ne sait pas 
+        # -tc- sur quelle position il doit se positionner. Autant recevoir 
+        # -tc- cette position en paramètre puis self.position = position
         self.position = Position()  # lien vers l'instance de position correspondante
+        # -tc- Tu reçois le labyrinthe en argument via le paramètre labyrinthe. 
+        # -tc- Plutôt self.labyrinth = labyrinth que réinstancier. On ne veux pas deux labyrinthes
         self.labyrinth = Labyrinth()  # lien vers l'instance du labyrinth
         self.items = Items()
 
