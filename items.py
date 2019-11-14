@@ -51,6 +51,8 @@ class Items:
         
         """
         # Check random position items
+        # -tc- Utiliser l'instruction pass pour une méthode vide
+        pass
 
         
     # -tc- Pour que ta méthode ajoute un item, il faut qu'elle en reçoive un en argument. Il nous faut dont
